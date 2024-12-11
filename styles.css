@@ -1,0 +1,197 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000;
+    color: white;
+    line-height: 1.6;
+    padding-top: 80px; /* This will give space for the fixed navbar */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ff6600;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar nav ul li {
+    margin: 0 15px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #ff6600;
+    transform: translateY(-3px);
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(45deg, #ff4500, #ff7300);
+}
+
+.main-heading {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.sub-heading {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #f0f0f0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #ff4500;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #f0f0f0;
+}
+
+
+
+
+/* Add animation to main heading */
+.main-heading {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: slideFromTop 1.5s ease-in-out;
+}
+
+/* Add animation to sub-heading */
+.sub-heading {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #f0f0f0;
+    animation: slideFromTop 2s ease-in-out;
+}
+
+/* Add animation to button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #ff4500;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s;
+    animation: slideFromTop 2.5s ease-in-out;
+}
+
+/* Animation Keyframes for Coming from Top */
+@keyframes slideFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-50px); /* Move the element from above */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Element reaches its original position */
+    }
+}
+
+
+
+
+
+
+
+/* Page Container (to avoid overlap with navbar) */
+.container {
+    margin-top: 80px; /* This space will prevent the navbar from overlapping the content */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar nav ul {
+        flex-direction: column;
+        padding-top: 15px;
+    }
+    .navbar nav ul li {
+        margin: 10px 0;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 15px;
+    }
+    .navbar .logo {
+        font-size: 1.5rem;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .btn {
+        padding: 10px 20px;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+

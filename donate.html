@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <title>Support</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="donate.css">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Orbito Official</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="gaming.html">Gaming</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="donate.html" class="active">Donate</a></li>
+        <li><a href="social-media.html">Social Media</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1 class="animated-text">Support My Work!</h1>
+      <p>Your generous contributions help me create more quality content and improve my work. Every donation motivates me to keep growing. If you enjoy my content, please consider supporting me!</p>
+    </div>
+    <div class="donate-options">
+      <button class="donate-button" onclick="window.open('https://www.paypal.com')">Donate via PayPal</button>
+      <button class="donate-button" onclick="showUPI()">Donate via UPI</button>
+      <p id="upi-id" class="upi-id hidden">UPI ID: myupi@bank</p>
+    </div>
+  </main>
+
+  <script>
+    function showUPI() {
+      const upiText = document.getElementById("upi-id");
+      upiText.classList.toggle("hidden");
+    }
+  </script>
+</body>
+</html>

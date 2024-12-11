@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <title>Gaming</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="gaming.css">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Orbito Official</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="gaming.html" class="active">Gaming</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="social-media.html">Social Media</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 class="animated-text">Welcome to My Gaming World!</h1>
+      <p>........No idea what to write💹</p>
+    </section>
+
+    <section class="games-section">
+      <div class="game-card">
+        <img src="game1.jpg" alt="Game 1">
+        <h3>Game 1</h3>
+        <p>Discover the thrills of this action-packed game and join me for some high-stakes fun!</p>
+        <button class="game-button">Learn More</button>
+      </div>
+      <div class="game-card">
+        <img src="game2.jpg" alt="Game 2">
+        <h3>Game 2</h3>
+        <p>Embark on an adventure in this immersive RPG filled with challenges and rewards.</p>
+        <button class="game-button">Learn More</button>
+      </div>
+      <div class="game-card">
+        <img src="game3.jpg" alt="Game 3">
+        <h3>Game 3</h3>
+        <p>Test your skills in this fast-paced multiplayer experience. Are you ready for the challenge?</p>
+        <button class="game-button">Learn More</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const text = document.querySelector(".animated-text");
+      text.style.animation = "fadeIn 1.5s ease-out forwards";
+    });
+  </script>
+</body>
+</html>
